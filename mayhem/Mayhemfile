@@ -1,0 +1,6 @@
+project: uap-java
+target: UAPFuzz
+
+cmds:
+    - cmd: /jazzer --cp=/project/fuzz/src/UAPFuzz.jar:/project/fuzz/src/libs.jar --target_class=UAPFuzz
+      libfuzzer: true
